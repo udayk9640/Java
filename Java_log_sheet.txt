@@ -1,0 +1,464 @@
+Github: https://github.com/udayk9640
+
+30/1/2024(Tuesday)
+
+
+29/1/2024(Monday)
+
+Final Keyword: Final keyword is Java just acts like a constant.The final keyword is non-access modifier used for classes,attributes and methods which make them impossible to inherit or override.
+1.Java Final Variable
+If you make any variable as final, you cannot change the value of the final variable(It will be constant).
+2.Java Final Method
+If you make any method final, you cannot override it.
+3.Java Final Class
+If you make any class as final, you cannot extend it.
+
+Encapsulation:Encapsulation in Java is a process of wrapping code and data together into a single unit. We can create a fully encapsulated class in Java by making all the data members of the class private. Now we can use setter and getter methods to set and get the data in it.
+The Java Bean class is the example of a fully encapsulated class.
+It is a way to achieve data hiding in Java because other class will not be able to access the data through the private data members.
+Java Bean: It is an object. All the data members are private. To access private members there must be getter and setter methods. Every Java Bean is encapsulated.
+
+
+
+
+
+28/1/2024(Sunday)
+Runtime Polymorphism or Dynamic Method Dispatch: It is a process in which a call to an overridden method is resolved at runtime(JRE) rather than compile-time.
+In this process, an overridden method is called through the reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
+
+
+
+27/1/2024(Saturday)
+Access Specifiers in Java:
+
+
+
+26/1/2024(Friday)
+
+Abstraction: Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+Abstract Class in Java: A class which is declared with the abstract keyword is known as an abstract class in Java . It can have abstract and non-abstract methods (method with the body).
+ 
+Syntax:  abstract void printStatus();
+Abstract class: is a restricted class that cannot be used to create objects to access it, it must be inherited from another class.
+Abstract Interface in Java: Interfaces have unimplemented methods. In interface by default it is abstract.Interface can have only abstract methods. Interface cant provide the implementation of abstract class.
+
+
+
+
+
+25/1/2024(Thursday)
+
+Is a Relation: It implies that a subclass is a specific type of its superclass. For example, consider a class hierarchy with a superclass called "Animal" and a subclass called "Dog." We can say that a Dog is an Animal, which reflects the is-a relationship.
+
+Syntax: class SubclassName extends SuperclassName{
+
+}
+
+Instance Of Operator:The java instanceof operator is used to test whether the object is an instance of the specified type (class or subclass or interface).
+The instanceof in java is also known as type comparison operator because it compares the instance with type. It returns either true or false. If we apply the instanceof operator with any variable that has null value, it returns false.
+EX:  class Simple1{  
+public static void  main(String args[]){  
+ Simple1 s= new Simple1();  
+ System.out.println(s instanceof Simple1);//true  
+ }  
+}  
+
+
+Super Keyword: The super keyword in Java is a reference variable which is used to refer immediate parent class object.Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super reference variable.We can use super keyword to access the data member or field of parent class. It is used if parent class and child class have the same fields.
+
+
+
+
+
+
+
+
+24/1/2024(Wednesday))
+
+
+23/1/2024(Tuesday)
+
+Polymorphism: The ability to take more than one form.
+Types of polymorphism:
+1.compile-time polymorphism
+2.Runtime polymorphism
+
+Method overloading:
+When there are multiple functions with the same name but different parameters then these functions are said to be overloaded.
+
+Ex: void area(int x){
+}
+void area(int l,int b){
+}
+
+Method overriding:
+If subclass (child class) has the same method as declared in the parent class.same signature in a child class is  over riding.
+
+Signature: 
+1.No of parameters and types of parameters are same
+2.return type
+
+Typecasting:It allows to  convert variables from one data type to another data type.
+1.Widening Typecasting:
+Converting a lower data type into a higher one is called widening type casting. It is also known as implicit conversion or casting down. It is done automatically. It is safe because there is no chance to lose data. It takes place when:
+Both data types must be compatible with each other.
+The target type must be larger than the source type.
+Ex: int ans = (22/7) * 12 *12
+Narrowing Typecasting:
+Converting a higher data type into a lower one is called narrowing type casting. It is also known as explicit conversion or casting up. It is done manually by the programmer. If we do not perform casting then the compiler reports a compile-time error.
+Ex: Float k =  34.6
+ans = (int)k
+Upcasting: Low level to high level
+Downcasting: High level to low level
+
+
+
+22/1/2024(Monday)
+
+
+
+
+
+
+21/1/2024(Sunday)
+
+
+
+
+20/1/2024(Saturday)
+Rules of Interface:
+Class extends class
+Class implements interface 1,2,3..
+Class extends class & implements interface 1,2,3..
+Interface extends interface(i.e class cannot be a parent for interface).
+
+Short cut for multiline comments in Eclipse is ctrl + shift + /.A
+One  interface can have multiple parent interface:
+ Java Class can only extend one parent class. Multiple inheritance is not allowed. Interfaces are not classes, however, and an interface can extend more than one parent interface.
+The extends keyword is used once, and the parent interfaces are declared in a comma-separated list.
+EX:  public interface Hockey extends Sports, Event.
+
+
+19/1/2024(Friday)
+Inheritance: 
+Inheritance acquires the properties from parent class to child class
+Types Of Inheritance:
+Single Inheritance: In single inheritance, Child class inherits the properties of parent class.
+In java we can inherit using extends keyword.
+Multilevel Inheritance: In Multilevel Inheritance, a child class will be inheriting a parent class, and as well as the child class also acts as the parent class for other classes.
+Hierarchical Inheritance: In Hierarchical Inheritance, one class serves as a parent class for more than one child class.
+Multiple Inheritance:  one class can have more than one superclass and inherit features from all parent classes. 
+Hybrid Inheritance: It is a mix of two or more above types of  inheritance.
+
+Interface: 1.It’s like a class.
+2. You cannot create object for interface.
+3.Use interface keyword  to create.
+4.In interface every method must be unimplemented.
+5.Using implements keyword we can have one or more than one interface.
+
+
+
+18/1/2024(Thursday)
+Note:
+1.Static members must be called inside static member.
+2.Inside non static method you can call static and non-static methods
+3.Inside static method you can call static and methods.
+
+Loops:
+Loops are used in programming to execute a block of code repeatedly as long as a specified condition is met.
+For loop:
+
+for (statement 1; statement 2; statement 3) {
+
+}
+While loop:
+The while loop loops through a block of code as long as a specified condition is true.
+while (condition) {
+  // code block to be executed
+}
+
+If loop:
+Use the if statement to specify a block of Java code to be executed if a condition is true.
+
+if (condition) {
+  // block of code to be executed if the condition is true
+}
+
+If else loop:
+Use the else statement to specify a block of code to be executed if the condition is false.
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+
+
+
+11/1/2024(Thursday)
+Arithmetic Java Programs
+
+Sum of two numbers:
+Public class FirstProg {
+  public static void main(String[] args) {
+      int a = 10;
+      int b = 5;
+      int c = a+b;
+      System.out.println(“sum of two numbers:” + c);
+ }
+}
+
+O/P: sum of two numbers:15
+
+
+Difference of two numbers:
+
+Public class FirstProg {
+  public static void main(String[] args) {
+      int a = 10;
+      int b = 5;
+      int c = a-b;
+      System.out.println(“Diff of two numbers:” + c);
+ }
+}
+
+O/P: Diff of two numbers:5
+
+
+Multiplication of two numbers:
+
+Public class FirstProg {
+  public static void main(String[] args) {
+      int a = 10;
+      int b = 5;
+      int c = a*b;
+      System.out.println(“Multiplication  of two numbers:” + c);
+ }
+}
+
+O/P: Diff of two numbers:50
+
+
+
+Division of two numbers:
+
+Public class FirstProg {
+  public static void main(String[] args) {
+      int a = 10;
+      int b = 5;
+      int c = a/b;
+      System.out.println(c);
+ }
+}
+
+O/P: Diff of two numbers:2
+
+
+
+      
+
+10/1/2024(Wednesday)
+
+Wrapper class in java:
+
+Wrapper classes also provide a way to handle Exceptions in Java. For example, the Integer wrapper class provides the parseInt() method, which is used to parse an int from a String. If the specified String does not contain a valid integer value, the process will throw a NumberFormatException.
+
+Ex:Integer number = Integer.parseInt("123");
+
+9/1/2024(Tuesday)
+Primitive Datatypes default values
+char-0
+int-0
+boolean-false
+double-0
+long-0
+short-0
+float-0
+
+
+1.Object default value is null.
+
+Initalizing an object using new keyword followed by constructor:
+New is a keyword that is used to create a new object of a class. The syntax is new MethodName(). It creates a new object of the specified class and calls a constructor.
+
+
+
+
+8/1/2024(Monday)
+
+Class structure 
+class Classname { 
+             //class members 
+             1.Data members 
+              2. Behavioural members
+   }
+Data members we have to specify datatype before variable.
+Data members are of 2 types: 
+1.primitive Data Types: primitive data types stores a single value. Primitive data types are int,float,char,double,long,short,boolean
+2.Derived Data Types:Derived data types is derived from the primitive data types.
+Derived Data types are arrays,object,string.
+
+Object: object is a real time entity.object name should be a real world specified name.
+Syntax: class_definition_name obj_name;
+Ex: car kiaseltosGT;
+
+Bank account type : Bank account type holds int.
+Bank account transaction type: Deposit- float,withdraw-float.interest -float.
+
+
+
+
+
+
+4/1/2024(Thursday)
+Addition of two numbers:
+public class Addition
+{
+public static void main(String args[])   
+{  
+int a = 225, b = 115, sum;  
+sum = a + b;  
+System.out.println("The sum of numbers is: "+sum);  
+}  
+}  
+Output:The sum of numbers is: 340
+
+Subtraction of two numbers:
+public class Subtraction
+{
+public static void main(String args[])   
+{  
+int a = 225, b = 115, diff;  
+duff = a - b;  
+System.out.println("Subtraction of numbers is: "+diff);  
+}  
+}  
+Output:Subtraction of numbers is: 110
+
+Multiplication of two numbers:
+public class Multiplication
+{
+public static void main(String args[])   
+{  
+int a = 25, b = 10, mul;  
+mul = a + b;  
+System.out.println("Multiplication of  two numbers is: "+mul);  
+}  
+}  
+Output:Multiplication of two numbers is: 250
+
+Functionalities of operating system: 
+Memory management
+Device management
+Error Detecting Aids
+Network Management
+File Management
+
+Datatypes in Java:
+Primitive Datatypes: Boolean,char,int,float,long,double
+Non-Primitive Datatypes: class,object,arrays,strings
+
+
+
+
+
+
+
+
+3/1/2024(wednesday)
+JRE: JRE is an application for running purpose.
+JDK: JDK is used for development,complie and runtime errors.
+Different versions in java:
+1 to 21
+The latest version is 21
+The standard version is 1.8.1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21.
+
+
+2/1/2024(Tuesday)
+One to many relation :
+In one-to-one relationship, one record of first table will be linked to another table.
+For ex: Each employee in the employee table will have a corresponding row in employee details that stores the particular employee details.
+One-to-many relation: A single record from one table can be linked to zero Or more rows in another table.
+Many-to-Many relation: In this each row in one table relate to many rows in another table.
+
+
+1/1/2024(Monday)
+1.Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION.
+Your result cannot contain duplicates.
+Ans. select distinct CITY from STATION WHERE left(city,1) in('a','e','i','o','u');
+2.Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your
+result cannot contain duplicates.
+Ans. select distinct CITY from STATION WHERE right(city,1) in('a','e','i','o','u');
+3.Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u)
+as both their first and last characters. Your result cannot contain duplicates.
+Ans. select distinct CITY from STATION where left(CITY,1) in ('a','e','i','o','u') and right(CITY,1)
+in ('a','e','i','o','u') ;
+4.Query the list of CITY names from STATION that either do not start with vowels or do
+not end with vowels. Your result cannot contain duplicates.
+Ans. select distinct CITY from STATION where left(CITY,1) not in ('a','e','i','o','u') or right(CITY,1)
+not in ('a','e','i','o','u');
+
+
+31/12/2023(Sunday)
+1.Write a Java program to check whether a number is odd or even?
+important java.io.*;
+important java.util.scanner;
+class number{
+public static void main (string args[]){
+int num = 10;
+if (num% 2 == 0) {
+System.out.println(“Entered no is even”);}
+else {
+System.out.println(“Entered no is odd”)
+}
+}
+}
+
+O/P : Entered no is even
+
+2.Write a Java program to find palindrome or not?
+important java.io.*;
+important java.util.scanner;
+class palindrome {
+static int reversNumber(int n) { 
+int reversed_n = 0; 
+While(n > 0) { 
+reversed_n = reversed_n*10 + n%10;
+n = n/10;
+}
+ return reversed_n;
+}
+public static void main (string args[]) {
+int n = 123464321;
+int reverseN = reverseNumber(N);
+System.out.println(“Reverse of n = “ + reverseN);
+if (n == reverseN) 
+System.out.println(“Palindrome= Yes”);
+else 
+System.out.println(“Palindrome= No”);
+}
+}
+
+O/P: Reverse of n= 123464321
+Palindrome = Yes
+
+
+Java is a popular programming language, created in 1995.
+It is owned by Oracle, and more than 3 billion devices run Java.
+
+It is used for:
+Mobile applications (specially Android apps)
+Desktop applications
+Web applications
+Web servers and application servers
+Games
+Database connection.
+
+Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+It is one of the most popular programming language in the world.
+It is open-source and free.
+It is secure, fast and powerful.
+It has a huge community support.
+
+
+
