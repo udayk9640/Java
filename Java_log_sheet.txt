@@ -1,6 +1,28 @@
 Github: https://github.com/udayk9640
 
+
+
+1/2/2024(Thursday)
+Immutable : Once it is created it cannot be changed. 
+Rule 1: To make objects immutable make all the methods private including setter methods.
+
+Static Keyword: The static keyword in java is used for memory management mainly. We can apply static keyword with variable, methods, blocks and nested classes. The static keyword belongs to the class than an instance of the class.
+
+Static Members: Static members maintains separate memory block.
+Rule1: If there is a static member by making public you can access using classname. 
+Rule2: I there is non static member you cannot access with static member.
+
+
+
+
+
+
+
 31/1/2024(Wednesday)
+Scanner: The Scanner class is used to get user input, and it is found in the java.util package.
+To use the Scanner  class, create an object of the class and use any of the available methods found in the Scanner  class documentation. In our example, we will use the nextLine() method, which is used to read Strings.
+The Java Scanner class is widely used to parse text for strings and primitive types using a regular expression. It is the simplest way to get input in Java. By the help of Scanner in Java, we can get input from the user in primitive types such as int, long, double, byte, float, short, etc.
+String Pool : String pool is nothing but a storage area in Java heap where string literals stores. It is also known as String Intern Pool or String Constant Pool. It is just like object allocation. By default, it is empty and privately maintained by the Java String class. Whenever we create a string the string object occupies some space in the heap memory. Creating a number of strings may increase the cost and memory too which may reduce the performance also.31/1/2024(Wednesday)
 Scanner: The Scanner class is used to get user input, and it is found in the java.util package.
 To use the Scanner  class, create an object of the class and use any of the available methods found in the Scanner  class documentation. In our example, we will use the nextLine() method, which is used to read Strings.
 The Java Scanner class is widely used to parse text for strings and primitive types using a regular expression. It is the simplest way to get input in Java. By the help of Scanner in Java, we can get input from the user in primitive types such as int, long, double, byte, float, short, etc.
