@@ -1,5 +1,6 @@
 Github: https://github.com/udayk9640
 
+<<<<<<< HEAD:Java_log_sheet.txt
 
 
 1/2/2024(Thursday)
@@ -30,6 +31,8 @@ String Pool : String pool is nothing but a storage area in Java heap where strin
 
 
 
+=======
+>>>>>>> 5a1ec6d4520c67c4175fb45a933a2c54facb4e92:Java_logsheet.txt
 29/1/2024(Monday)
 
 Final Keyword: Final keyword is Java just acts like a constant.The final keyword is non-access modifier used for classes,attributes and methods which make them impossible to inherit or override.
