@@ -1,7 +1,0 @@
-1. can create account /self register
-2. add bank account
-3.add money to wallet
-4.send money / Do a txn
-5.statements 
-6. Refund
-7.monthly transaction history
