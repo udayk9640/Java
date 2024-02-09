@@ -1,6 +1,70 @@
 Github: https://github.com/udayk9640
 
+9/2/2024(Friday)
+Collections:
+The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.
+Java Collections can achieve all the operations that you perform on data such as searching, sorting, insertion, manipulation, and deletion.
 
+Java Collection means a single unit of objects. Java Collection framework provides many interfaces(list,queue)and classes(ArrayList,HashSet,HashMap)
+List: Alternates of array but its size is not fixed.
+The list() method of java.util.Collections class is used to return an array list containing the elements returned by the specified enumeration in the order they are returned by the enumeration. 
+Set: Same as list but it has unique elements and it does not store duplicates elements.
+
+Map: It follows key value pair.It has 2 components.
+1.Key (unique)
+2.Value
+
+Lists,Set and Map are Interfaces.
+
+Size - It is used to get the number of elements in this list.
+
+Get - The get() method of ArrayList in Java is used to get the element of a specified index within the list.
+
+Add - Element can be added in Java ArrayList using add() method of java.util.ArrayList class.
+
+7/2/2024(Wednesday)
+Throw : The throw keyword in Java is used to explicitly throw an exception from a method or any block of code. We can throw either checked or unchecked Exceptions. The throw keyword is mainly used to throw custom exceptions. 
+
+Syntax: throw new ArithmeticException("/ by zero");
+
+Throws: throws is a keyword in Java that is used in the signature of a method to indicate that this method might throw one of the listed type exceptions. The caller to these methods has to handle the exception using a try-catch block. Hierarchical Exception.
+
+Syntax: type method_name(parameters) throws exception_list
+
+
+
+6/2/2024(Tuesday)
+Finally:
+The finally keyword is used to execute code (used with exceptions - try..catch statements) no matter if there is an exception or not.
+Java finally block is always executed whether an exception is handled or not. Therefore, it contains all the necessary statements that need to be printed regardless of whether the exception occurs or not.
+
+
+Contains: The contains() method checks whether a string contains a sequence of characters.Returns true if the characters exist and false if not. 5/2/2024(Monday)
+Exception Handling:
+When executing Java code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.When an error occurs, Java will normally stop and generate an error message. The technical term for this is: Java will throw an exception (throw an error).
+For all exceptions in java parent is the  exception and for exception there is a parent called throwable.
+Try:The try statement allows you to define a block of code to be tested for errors while it is being executed. It contains a set of statements when an exception can occur.
+Catch: The catch statement allows you to define a block of code to be executed, if an error occurs in the try block. It is always used to handle the uncertain conditions of a try block.We can have multiple catch blocks. Every catch block must have a different exception. Parent exceptions should be written at the end.
+
+
+
+3/2/2024(Saturday)
+
+Converting primitive data into object:
+
+
+
+2/2/2024(Friday)
+
+Wrapper class:
+
+Wrapper class is a class which is used to convert the primitive values into an object and an object into a  primitive
+
+ This Keyword:
+
+This keyword is a reference variable which refers to the current object
+The this() constructor call should be used to reuse the constructor from the constructor. it maintains the chain link between the constructor.
+The this() keyword is used between the inside of class and outside of the method.
 
 1/2/2024(Thursday)
 Immutable : Once it is created it cannot be changed. 
