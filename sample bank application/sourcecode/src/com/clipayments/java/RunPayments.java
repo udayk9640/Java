@@ -1,6 +1,8 @@
 package com.clipayments.java;
 import java.util.Scanner;
+import java.util.List;
 
+import com.clipayments.java.entity.BankAccount;
 import com.clipayments.java.entity.User;
 public class RunPayments {
 	
@@ -10,7 +12,9 @@ public class RunPayments {
 	
 
 		static int x=10;
-		public static User[] usersList = new User[5];
+		//public static User[] usersList = new User[5];
+		public static List<User> userlist;
+		public static List<BankAccount> Bankacctlist;
 
 		public static void main(String[] args) {
 			
@@ -23,6 +27,7 @@ public class RunPayments {
 				System.out.println("2. Login");
 				System.out.println("3. ADD Bank Account");
 				System.out.println("4. List of Users");
+				System.out.println("5.Current User");
 				System.out.println("-1. Quit/ Logout");
 				System.out.println("Choose an Option:");
 				
@@ -70,20 +75,42 @@ public class RunPayments {
 					
 					User u = ops.doUserRegistration(fName, lName, password, phNo, dob, addr);
 					
-					for(int i=0;i<usersList.length;i++) {
-						if(usersList[i] ==null) {
-							usersList[i]=u;
+//					for(int i=0;i<usersList.length;i++) {
+//						if(usersList[i] ==null) {
+//							usersList[i]=u;
+//							break;
+//									
+//						}
+//						
+//					}
+					
+					for(int i=0;i<userlist.size();i++) {
+						if(userlist.get(i)==null) {
+							userlist.get(i).setUserId(i);
 							break;
-									
 						}
-						
-					}
+							
+							
+						}
 				}else if(optStr.equalsIgnoreCase("2")) {
+					System.out.println("Login Your ID");
+					System.out.println("Enter UserId : ");
+					String Uid =opt.next();
+					System.out.println("Enter the Password : ");
+					String password = opt.next();
+					ops.verifyuserid(Uid, password, userlist);
+					if (ops.verifyuserid(Uid, password, userlist)) {
+						System.out.println("Login Success !");
+					}else {
+					System.out.println("Login Failed !");
+					}
 					
 				}else if(optStr.equalsIgnoreCase("3")) {
 					
 				}else if(optStr.equalsIgnoreCase("4")) {
-					ops.printUserList(usersList);
+					ops.printUserList(userlist);
+				}else if(optStr.equalsIgnoreCase("5")){
+					ops.Printcurruserdetails(0, userlist);
 				}else if(optStr.equalsIgnoreCase("-1")) {
 					break;
 				}else {
