@@ -5,7 +5,7 @@ public class BankAccount {
 	private String bankAcctNumber;
 	private String bankAcctBankName;
 	private String bankAcctIFSC;
-	private AcctType bankAcctAcctType;
+	private AccType bankAcctAcctType;
 	private String bankAcctPin;
 	
 	private int userId;
@@ -34,10 +34,10 @@ public class BankAccount {
 	public void setBankAcctIFSC(String bankAcctIFSC) {
 		this.bankAcctIFSC = bankAcctIFSC;
 	}
-	public AcctType getBankAcctAcctType() {
+	public AccType getBankAcctAcctType() {
 		return bankAcctAcctType;
 	}
-	public void setBankAcctAcctType(AcctType bankAcctAcctType) {
+	public void setBankAcctAcctType(AccType bankAcctAcctType) {
 		this.bankAcctAcctType = bankAcctAcctType;
 	}
 	public String getBankAcctPin() {

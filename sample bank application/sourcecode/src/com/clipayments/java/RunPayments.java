@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Map;
 
 import java.util.Set;
-import java.util.List;
 
+import com.clipayments.java.entity.AccType;
 import com.clipayments.java.entity.BankAccount;
 import com.clipayments.java.entity.User;
 public class RunPayments {
@@ -167,7 +167,7 @@ public class RunPayments {
 		BankAccount ba = new BankAccount();
 		ba.setBankAcctNumber(acctNum);
 		ba.setBankAcctIFSC(ifscCode);
-		ba.setBankAcctAcctType(AcctType.SAVINGS);
+		ba.setBankAcctAcctType(AccType.SAVINGS);
 		ba.setBankAcctPin(acctPin);
 		ba.setUserId(currUserId);
 		

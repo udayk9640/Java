@@ -13,8 +13,8 @@ public class UserOperations {
 	List<BankAccount> bankAcctList = null;
 	
 	public UserOperations() {
-		users= RunPaymentsApp.usersList;
-		bankAcctList = RunPaymentsApp.bankAcctList;
+		users= RunPayments.usersList;
+		bankAcctList = RunPayments.bankAcctList;
 	}
 	
 	public User doUserRegistration(String fName, String lName, String password, long phNum, String dob,String addr) throws Exception {
