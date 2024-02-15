@@ -1,6 +1,7 @@
 package com.clipayments.java.entity;
-
-public class User {
+import java.util.ArrayList;
+import java.util.List;
+public class User extends Object {
 
 	private String firstName;
 	private String lastName;
@@ -11,6 +12,15 @@ public class User {
 	private int userId;
 	private String password;
 	
+	private List<BankAccount> baList = new ArrayList<BankAccount>();
+		
+	
+	public List<BankAccount> getBaList() {
+		return baList;
+	}
+	public void setBaList(List<BankAccount> baList) {
+		this.baList = baList;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -60,5 +70,6 @@ public class User {
 	public String toString() {
 		return this.userId+":"+ this.firstName +":"+ this.lastName + ":"+this.phoneNum+":"+this.dateOfBirth+":"+this.communicationAddr;
 	}
+	
 	
 }

@@ -2,48 +2,53 @@ package com.clipayments.java.entity;
 import java.util.List;
 
 public class BankAccount {
-	private String Bankacctno;
-	private String BankacctName;
-	private AccType Acctype;
-	private String AcctIFSC;
-	private String Pin;
-	private List<BankAccount> Bankacctlist;
-	public String getBankacctno() {
-		return Bankacctno;
+	private String bankAcctNumber;
+	private String bankAcctBankName;
+	private String bankAcctIFSC;
+	private AcctType bankAcctAcctType;
+	private String bankAcctPin;
+	
+	private int userId;
+	
+	public int getUserId() {
+		return userId;
 	}
-	public void setBankacctno(String bankacctno) {
-		Bankacctno = bankacctno;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
-	public String getBankacctName() {
-		return BankacctName;
+	public String getBankAcctNumber() {
+		return bankAcctNumber;
 	}
-	public void setBankacctName(String bankacctName) {
-		BankacctName = bankacctName;
+	public void setBankAcctNumber(String bankAcctNumber) {
+		this.bankAcctNumber = bankAcctNumber;
 	}
-	public AccType getAcctype() {
-		return Acctype;
+	public String getBankAcctBankName() {
+		return bankAcctBankName;
 	}
-	public void setAcctype(AccType acctype) {
-		Acctype = acctype;
+	public void setBankAcctBankName(String bankAcctBankName) {
+		this.bankAcctBankName = bankAcctBankName;
 	}
-	public String getAcctIFSC() {
-		return AcctIFSC;
+	public String getBankAcctIFSC() {
+		return bankAcctIFSC;
 	}
-	public void setAcctIFSC(String acctIFSC) {
-		AcctIFSC = acctIFSC;
+	public void setBankAcctIFSC(String bankAcctIFSC) {
+		this.bankAcctIFSC = bankAcctIFSC;
 	}
-	public String getPin() {
-		return Pin;
+	public AcctType getBankAcctAcctType() {
+		return bankAcctAcctType;
 	}
-	public void setPin(String pin) {
-		Pin = pin;
+	public void setBankAcctAcctType(AcctType bankAcctAcctType) {
+		this.bankAcctAcctType = bankAcctAcctType;
 	}
-	public List<BankAccount> getBankacctlist() {
-		return Bankacctlist;
+	public String getBankAcctPin() {
+		return bankAcctPin;
 	}
-	public void setBankacctlist(List<BankAccount> bankacctlist) {
-		Bankacctlist = bankacctlist;
+	public void setBankAcctPin(String bankAcctPin) {
+		this.bankAcctPin = bankAcctPin;
 	}
 	
-
+	public String  printBankAccountDetails() {
+		return "[" +this.bankAcctNumber+","+this.bankAcctIFSC+ "]";
+	}
+	
 }

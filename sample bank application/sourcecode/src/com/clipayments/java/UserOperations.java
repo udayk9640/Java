@@ -1,52 +1,88 @@
 package com.clipayments.java;
 
+import com.clipayments.java.entity.BankAccount;
 import com.clipayments.java.entity.User;
+import com.clipayments.java.entity.AccType;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 
 public class UserOperations {
+	List<User> users = null;
+	List<BankAccount> bankAcctList = null;
+	
+	public UserOperations() {
+		users= RunPaymentsApp.usersList;
+		bankAcctList = RunPaymentsApp.bankAcctList;
+	}
+	
+	public User doUserRegistration(String fName, String lName, String password, long phNum, String dob,String addr) throws Exception {
+		User u = new User();
+		u.setFirstName(fName);
+		u.setLastName(lName);
+		u.setPhoneNum(phNum);
+		u.setDateOfBirth(dob);
+		u.setCommunicationAddr(addr);
+		u.setPassword(password);
 		
-		public User doUserRegistration(String fName, String lName, String password, long phNum, String dob,String addr) {
-			User u = new User();
-			u.setFirstName(fName);
-			u.setLastName(lName);
-			u.setPhoneNum(phNum);
-			u.setDateOfBirth(dob);
-			u.setCommunicationAddr(addr);
-			u.setPassword(password);
-			
-			u.setUserId(1234);
-			return u;
+		if((fName+lName).length() >50) {
+			throw new Exception();
 		}
 		
-		public void printUserList(List<User> userlist){
-			for(int i=0;i<userlist.size();i++) {
-				if(userlist.get(i) != null) {
-					System.out.println("User Details of "+ userlist.get(i).getFirstName());
-					System.out.println(userlist.get(i));
-				}
-				
+		u.setUserId((int)(Math.random()*1000)+100);
+		return u;
+	}
+	
+	public void printUserList(List<User> users){
+		for(User u:users) {
+			if(users != null) {
+				System.out.println("User Details of "+ u.getFirstName());
+				System.out.println(u);
 			}
 		}
-		int i=0;
-		public boolean verifyuserid(String userId,String password,List<User> Users) {
-			if(String.valueOf(Users.get(i).equals(userId))!= null) {
-				if(password.equals(password)) {
+	}
+	
+	public boolean verifyUserLogin(String userId, String password){
+		for(int i=0;i<users.size();i++) {
+			if(String.valueOf(users.get(i).getUserId()).equals(userId)) {
+				if(password.equals(users.get(i).getPassword())) {
 					return true;
 				}
 			}
-			return false;
 		}
-		public void Printcurruserdetails(int userId,List<User> Users) {
-			for (int i = 0;i<Users.size();i++) {
-				if(Users.get(i).getUserId() !=userId) {
-					System.out.println(userId);
-					break;
-				}
-				
-				
+		return false;
+	}
+	
+	public void printCurrUserDetails(int userId){
+		for(User u:users) {
+			if(u.getUserId() == userId) {
+				System.out.println(u);
+			}else {
+				System.out.println("No User Logged in.");
 			}
-			
 		}
+//		for(int i=0;i<users.size();i++) {
+//			if(users.get(i).getUserId() != userId) {
+//				System.out.println(users.get(i));
+//				break;
+//			}
+//		}
+	}
+	
+	public Map<User,List<BankAccount>> getUserBankAccounts() {
+		
+//		Map<User,BankAccount> userBankAcctMap = new HashMap<User,BankAccount>();
+		Map<User,List<BankAccount>> userBankAcctMap = new HashMap<User,List<BankAccount>>();
+		
+		for(User u:users) {
+			if(users != null) {
+				userBankAcctMap.put(u, u.getBaList());
+			}
+		}
+		return userBankAcctMap;
+		
+	}
 
 	}
 
