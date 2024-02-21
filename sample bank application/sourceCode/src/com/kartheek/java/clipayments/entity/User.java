@@ -1,26 +1,19 @@
-package com.clipayments.java.entity;
+package com.kartheek.java.clipayments.entity;
+
 import java.util.ArrayList;
 import java.util.List;
-public class User extends Object {
 
+public class User {
 	private String firstName;
 	private String lastName;
 	private long phoneNum;
 	private String dateOfBirth;
 	private String communicationAddr;
+	private List<BankAccount> bankList = new ArrayList<BankAccount>();
 	
 	private int userId;
 	private String password;
 	
-	private List<BankAccount> baList = new ArrayList<BankAccount>();
-		
-	
-	public List<BankAccount> getBaList() {
-		return baList;
-	}
-	public void setBaList(List<BankAccount> baList) {
-		this.baList = baList;
-	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -54,8 +47,8 @@ public class User extends Object {
 	public int getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setUserId( ) {
+		this.userId =  (int) (Math.random()*1000+100);
 	}
 	public String getPassword() {
 		return password;
@@ -71,5 +64,8 @@ public class User extends Object {
 		return this.userId+":"+ this.firstName +":"+ this.lastName + ":"+this.phoneNum+":"+this.dateOfBirth+":"+this.communicationAddr;
 	}
 	
-	
+	public String toFile() {
+		return this.userId+","+ this.firstName +","+ this.lastName + ","+this.phoneNum+","+this.dateOfBirth+","+this.communicationAddr+"\n";
+	}
+
 }
