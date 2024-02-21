@@ -1,3 +1,4 @@
+
 package com.kartheek.java.clipayments;
 
 import java.util.ArrayList;
@@ -93,7 +94,7 @@ public class RunPaymentsApplication {
 				
 			}
 		}
-		opt.close();
+		
 	}
 	
 	
