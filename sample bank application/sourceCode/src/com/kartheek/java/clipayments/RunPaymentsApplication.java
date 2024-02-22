@@ -20,6 +20,15 @@ public class RunPaymentsApplication {
     
 
 	public static void main(String[] args) {
+		FileOps fileOps = new FileOps();
+		try {
+			List<User> userData = fileOps.fileToUser();
+			for(User u: userData) {
+				System.out.println(u.getUserId()+" "+u.getFirstName()+" "+u.getLastName()+" "+u.getPhoneNum()+" "+u.getDateOfBirth()+" "+u.getCommunicationAddr());
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		int selectedOption=0;		
 		Scanner opt = new Scanner(System.in);
