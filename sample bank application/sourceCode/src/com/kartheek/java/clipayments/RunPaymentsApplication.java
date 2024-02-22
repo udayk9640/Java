@@ -195,7 +195,7 @@ public class RunPaymentsApplication {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter amount : ");
 		double amount = sc.nextDouble();
-		sc.close();
+		
 		if(amount <=10000.00) {
 			wallet.setBalance(wallet.getBalance()+amount);
 			System.out.println("your current balance is "+wallet.getBalance());
