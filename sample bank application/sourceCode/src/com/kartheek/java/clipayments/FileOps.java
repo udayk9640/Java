@@ -11,7 +11,7 @@ import com.kartheek.java.clipayments.entity.User;
 
 public class FileOps  {
 	
-	public final String PATH = "C:\\Users\\tmf12\\Desktop\\userData\\data.csv";
+	public final String PATH = "C:\\Users\\Dell\\Desktop\\cli\\data.csv";
 	File f = new File(PATH);
 	
 	public void userToFile(User u) throws Exception{
@@ -34,10 +34,10 @@ public class FileOps  {
 			user.setPhoneNum(Long.parseLong(usrDet[3]));
 			user.setDateOfBirth(usrDet[4]);
 			user.setCommunicationAddr(usrDet[5]);
-			userObjectList.add(user);
 			
-			 
+			userObjectList.add(user);
 		}
+		
 		br.close();
 		return userObjectList;
 		

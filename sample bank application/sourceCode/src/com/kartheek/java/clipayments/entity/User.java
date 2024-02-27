@@ -53,7 +53,6 @@ public class User {
 	public void setUserId(int id ) {
 		this.userId =  id;
 	}
-	
 	public String getPassword() {
 		return password;
 	}
