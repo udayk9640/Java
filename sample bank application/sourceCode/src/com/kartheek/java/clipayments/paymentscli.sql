@@ -8,12 +8,15 @@ Select * from user;
 drop table user;
 describe user;
 create table BankAccount(Bankacctno int NOT null , BankacctBankName varchar(25), Accttype varchar(10),
- BankIFSCCode varchar(25),BankacctPin Int, UserId int,BankBalance int,foreign key(UserId) references user(UserId),
+ BankIFSCCode varchar(20),BankacctPin Int, UserId int,BankBalance int,foreign key(UserId) references user(UserId),
  primary key(Bankacctno));
  describe BankAccount;
  drop table BankAccount;
  create table Transaction(TxnId varchar(30) not null,TxnDate Varchar (20),
- TxnAmount int, Txntype Varchar(20), TxnDestUserid int,UserId int,
+ TxnAmount double, Txntype Varchar(20), TxnDestUserid int,UserId int,
  foreign key(UserId) references user(UserId), Primary key(TxnId));
   describe Transaction;
  drop table Transaction;
+ 
+describe Wallet;
+drop table Wallet;
