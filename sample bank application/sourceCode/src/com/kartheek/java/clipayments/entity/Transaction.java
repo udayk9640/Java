@@ -1,6 +1,7 @@
 package com.kartheek.java.clipayments.entity;
 
-import java.time.LocalDate;
+//import java.time.LocalDate;
+import java.util.Date;
 
 public class Transaction {
 	TransactionType transactionType;
@@ -11,10 +12,24 @@ public class Transaction {
 	public void setTransactionAmount(Double transactionAmount) {
 		this.transactionAmount = transactionAmount;
 	}
-	LocalDate transactionDate;
-	String transactionId;
+    public BankAccount getSourceAcct() {
+		return sourceAcct;
+	}
+	public void setSourceAcct(BankAccount sourceAcct) {
+		this.sourceAcct = sourceAcct;
+	}
+	public BankAccount getDestinationAcct() {
+		return destinationAcct;
+	}
+	public void setDestinationAcct(BankAccount destinationAcct) {
+		this.destinationAcct = destinationAcct;
+	}
+	Date transactionDate;
+    long transactionId;
 	Wallet sourceWallet;
 	Wallet destinationWallet;
+	BankAccount sourceAcct;
+	BankAccount destinationAcct;
 	
 	public TransactionType getTransactionType() {
 		return transactionType;
@@ -23,18 +38,13 @@ public class Transaction {
 		this.transactionType = transactionType;
 	}
 	 
-	public LocalDate getTransactionDate() {
+	public Date getTransactionDate() {
 		return transactionDate;
 	}
-	public void setTransactionDate(LocalDate transactionDate) {
+	public void setTransactionDate(Date transactionDate) {
 		this.transactionDate = transactionDate;
 	}
-	public String getTransactionId() {
-		return transactionId;
-	}
-	public void setTransactionId(String transactionId) {
-		this.transactionId = transactionId;
-	}
+ 
 	public Wallet getSourceWallet() {
 		return sourceWallet;
 	}
@@ -46,6 +56,16 @@ public class Transaction {
 	}
 	public void setDestinationWallet(Wallet destinationWallet) {
 		this.destinationWallet = destinationWallet;
+	}
+	
+	@Override
+	public String toString() {
+		return  "Transaction Id : " + this.transactionId + "\n" + "\n Time : "+this.transactionDate +"\n"+ this.transactionType + "\n Amount : " + this.transactionAmount  ;}
+	public long getTransactionId() {
+		return transactionId;
+	}
+	public void setTransactionId(long transactionId) {
+		this.transactionId = transactionId;
 	}
 
 }
