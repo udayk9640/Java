@@ -1,4 +1,33 @@
 Github: https://github.com/udayk9640
+
+16/2/2024(Friday)
+Iterator:Iterators in Java are used in the collection framework to retrieve elements one by one. It is a universal iterator. It is used in any Collection object. By using Iterator, we can perform both read and remove operations.
+The iterator is the only cursor available for the entire collection framework. An iterator object can be created by calling the iterator() method present in the Collection interface.
+Syntax: Iterator itr = c.iterator();
+
+It has 3 methods:
+next(): It returns the next element in the iteration.
+hasnext(): Returns true if iteration has more elements.
+remove(): removes the next element in the iteration.
+
+ListIterator: It is only applicable  for list collection implemented classes like arraylist. It provides two direction iteration.Forward and backward iteration
+Syntax: ListIterator ltr = l.listIterator();
+
+It has 3 methods:
+hasprevious(): Returns true if iteration has more elements while back traversing.
+previous():Return previous element of the iteration
+previousindex(): Returns previous element index. If it is at the beginning return -1.
+
+set(object obj): Replaces the last element return by next() or previous() with specified element.
+
+add(object obj): Inserts the elements specified into the list at the position before the element.
+
+
+
+13/2/2024(Tuesday)
+Anagram: If the two strings have same character and different meaning and same length are known as anagram.
+Ex: listen-silent.
+
 12/2/2024(Monday)
 For-each is another array traversing technique like for loop, while loop, do-while loop introduced in Java5. 
  
