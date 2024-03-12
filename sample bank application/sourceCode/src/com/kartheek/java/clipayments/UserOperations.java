@@ -97,6 +97,30 @@ Map<User,List<BankAccount>> userBankAcctMap = new HashMap<User,List<BankAccount>
 		
 		 
 	}
+	public boolean doTransaction(BankAccount sender , Wallet receiver , TransactionType tType,double amount) {
+		if(sender.getAcctBalance()>amount) {
+			receiver.setBalance(receiver.getBalance()+amount);
+			sender.setAcctBalance(sender.getAcctBalance()-amount);
+			return true;
+		}
+		return false;
+		
+		 
+	}
+	public boolean doTransaction(Wallet sender , BankAccount receiver , TransactionType tType,double amount) {
+		if(sender.getBalance()>amount) {
+			receiver.setAcctBalance(receiver.getAcctBalance()+amount);
+			sender.setBalance(sender.getBalance()-amount);
+			return true;
+		}
+		return false;
+		
+		 
+	}
+	public  void creditAmountToAccount(BankAccount bankAccount,double amount) {
+		bankAccount.setAcctBalance(bankAccount.getAcctBalance()+amount);
+		System.out.println("money added to your account");
+	}
 		
  
 		
