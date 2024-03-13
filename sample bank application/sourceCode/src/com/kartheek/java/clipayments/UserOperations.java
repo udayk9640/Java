@@ -120,6 +120,7 @@ Map<User,List<BankAccount>> userBankAcctMap = new HashMap<User,List<BankAccount>
 	public  void creditAmountToAccount(BankAccount bankAccount,double amount) {
 		bankAccount.setAcctBalance(bankAccount.getAcctBalance()+amount);
 		System.out.println("money added to your account");
+		System.out.println("Hii");
 	}
 		
  

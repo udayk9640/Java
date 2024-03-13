@@ -59,6 +59,7 @@ public class RunPaymentsApplication {
 			System.out.println("10.Transaction");
 			System.out.println("11.check Account Balalance");
 			System.out.println("-1. Quit ");
+			System.out.println("12.Delete Bank Account");
 
 
 			System.out.println("Choose an Option:");
