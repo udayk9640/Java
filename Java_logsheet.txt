@@ -1,6 +1,6 @@
 Github: https://github.com/udayk9640
 
-build the second thread program.
+
 22/2/2024(Thursday)
 Comparable: It is used to compare two objects equal or not. It is mainly used for sorting. It is used to override compare to. It has three conditions: if two numbers are equal it will return 0 or if the number is  greater than the second number it will return positive or else it will return a negative number.
 21/2/2024(Wednesday)
