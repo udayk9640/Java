@@ -1,5 +1,80 @@
 Github: https://github.com/udayk9640
 
+24/03/2024(Sunday)
+INFORMATIONAL  RESPONSES (100-199)
+There are four informational responses 
+100 continue
+101 switching protocol 
+102 processing
+103 early hints
+Successful responses (200-299)
+There are ten successful responses
+200 OK
+201 created
+202 Accepted
+203 Non-authoritative information
+204 No content
+205 Reset content
+206 Partial content
+207 Multi status
+208 Already reported
+226 IM used
+
+Redirection messages (300-399)
+There are eight redirection messages
+300 Multi choice
+301 Moved permanently
+302 Found
+303 See other
+304 Not modified
+305 Use proxy
+307 Temporary redirect
+308 Permanent redirect 
+23-03-2024
+Client errors (400-499)
+400 Bad request
+401 unauthorized
+402 payment required
+403 Forbidden
+404 Not found
+405 Method not allowed
+406 Not acceptable
+407 Proxy authentication required
+408 Request time out
+409 Conflict
+410 Gone
+411 Length Required
+412 precondition failed
+413 Payload too large
+414 URL to long
+415 Unsupported media type
+416 Range not satisfiable
+417 Expectation failed
+418 I’M teapot (RFC 2324,RFC 7168)
+421 Misdirected request
+422 Unprocessable content
+423 Locked (webDEV;RFC 4918)
+424 Failed dependency (webDEV;RFC 4918)
+425 Too early(RFC 8470)
+426 Upgrade request
+428 Precondition request(RFC 6585)
+429 Too many requests(RFC 6585)
+431 Request header fields to large (RFC 6585)
+451 Unavailable for legal reasons(RFC 7725)
+
+Server errors (500-599)
+500 Internal server error
+501 Not implemented
+502 Bad gateway
+503 Service unavailable
+504 Gateway timeout
+505 HTTP version not supported 
+506 Variant also negotiates (RFC 2295)
+507 Insufficient storage (webDEV,RFC 4918)
+508 Loop detected  (webDEV,RFC 5842)
+509 Starting ticket required  (webDEV,RFC 5842)
+510 Not extended (RFC 2774)
+511 Network authentication required (RFC 6585)
 
 22/2/2024(Thursday)
 Comparable: It is used to compare two objects equal or not. It is mainly used for sorting. It is used to override compare to. It has three conditions: if two numbers are equal it will return 0 or if the number is  greater than the second number it will return positive or else it will return a negative number.
